@@ -5,4 +5,5 @@ type News struct {
 	Title   string `json:"title"`
 	Content string `json:"content"`
 	Status  string `json:"status"`
+	Tags    []Tag  `json:"tags" gorm:"many2many:news_tags;"`
 }

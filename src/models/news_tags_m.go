@@ -1,7 +1,7 @@
 package models
 
 type NewsTags struct {
-	ID     uint   `json:"id" gorm:"primary_key"`
-	IDNews string `json:"id_news"`
-	IDTag  string `json:"id_tag"`
+	ID     uint `json:"id" gorm:"primary_key"`
+	IDNews uint `json:"id_news"`
+	IDTag  uint `json:"id_tag"`
 }
